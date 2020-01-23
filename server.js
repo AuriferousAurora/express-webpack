@@ -3,8 +3,8 @@ const express = require('express');
 const ssHelloWorld = require('ss-hello-world-module-incllc');
 
 const app = express(),
-            DIST_DIR = __dirname,
-            HTML_FILE = path.join(DIST_DIR, '/dist/index.html')
+            DIST_DIR = __dirname + '/dist',
+            HTML_FILE = path.join(DIST_DIR, 'index.html')
             
 app.use(express.static(DIST_DIR))
 
